@@ -1,6 +1,6 @@
 # Question-Answer-System
 
-An NLP Question Answering System in which when we ask a question,It would reply with an answer by matching with the most relevant question we have in the stored.
+An NLP Question Answering System in which when we ask a question,It would reply with an answer by matching with the most relevant question we have in the storage.
 
 Concepts Used:
 
