@@ -4,8 +4,8 @@ An NLP Question Answering System in which when we ask a question,It would reply 
 
 Concepts Used:
 
-Bag of Words
-TFIDF Vectorizer
-Word2Vec Embedding
-Glove Embedding
+Bag of Words,
+TFIDF Vectorizer,
+Word2Vec Embedding,
+Glove Embedding,
 Cosine Similarity for similarity comparison
