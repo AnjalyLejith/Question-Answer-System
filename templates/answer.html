@@ -12,31 +12,23 @@
     <div style="color:blue" >
         <h2><font color="darkblue">Q&A System</font></h2>
 
-        <form action = "/success" method = "post" enctype="multipart/form-data">
+        <form action = "/back" method = "post" enctype="multipart/form-data">
              <br><br>
                     <label for="question" align="left"><h3>Question</h3></b></label>
-                    <textarea id="question" name="question" rows="3" cols="50" >
-                    </textarea>
+                    <input type="text" id="question" name="question" value="{{ question }}" size="50" readonly disabled;background-color: #72A4D2;>
             <br><br>
-            <div>
-            <p><h3><font color="darkblue">Please select your favorite Word Embedding technique:</font></h3></p>
-            <input type="radio" id="bow" name="word" value="bowe">
-            <label for="bow">Bag of Words</label><br>
-            <input type="radio" id="tfid" name="word" value="tfide">
-            <label for="tfid">TFIDF</label><br>
-            <input type="radio" id="wtv" name="word" value="wtve">
-            <label for="wtv">Word to Vector</label><br>
-            <input type="radio" id="glo" name="word" value="gloe">
-            <label for="glo">GloVe</label>
-            </div>
+            <label for="rquestion" align="left"><h3>Matching Question</h3></b></label>
+            <input type="text" id="rquestion" name="rquestion" value="{{ rquestion }}"  size="50" readonly disabled;background-color: #72A4D2;>
+            <br><br>
+            <label for="answer" align="left"><h3>Answer</h3></b></label>
+            <input type="text" id="answer" name="answer" value="{{ answer }}" size="50" readonly disabled;background-color: #72A4D2;>
+            <br><br>            
             <br>  
             </div>
      
             <div>
-        <input type = "submit" id="det" value="Give Answer">
-                  </form>
-        <form action = "/refresh" method = "post" enctype="multipart/form-data">
-        <input type = "submit" id="ref" value="Refresh">
+    
+        <input type = "submit" id="ref" value="Back">
 
         </form>
               </div>
@@ -56,7 +48,7 @@
   border: none;
   color: white;
   padding: 15px 32px;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -78,7 +70,7 @@
             border-color: 45px;
             border-style: solid;
             font-family: cursive;
-            text-align: left;
+            text-align: center;
             background-color: rgb(168, 131, 61);
             font-size: medium;
             position: absolute;
@@ -94,7 +86,7 @@
         #fuel {
             width: 83px;
             height: 43px;
-            text-align: left;
+            text-align: center;
             border-radius: 14px;
             font-size: 20px;
         }
@@ -106,7 +98,7 @@
         #research {
             width: 99px;
             height: 43px;
-            text-align: left;
+            text-align: center;
             border-radius: 14px;
             font-size: 18px;
         }
@@ -118,7 +110,7 @@
         #resea {
             width: 99px;
             height: 43px;
-            text-align: left;
+            text-align: center;
             border-radius: 14px;
             font-size: 18px;
         }
@@ -130,7 +122,7 @@
         #sub {
             width: 120px;
             height: 43px;
-            text-align: left;
+            text-align: center;
             border-radius: 14px;
             font-size: 18px;
         }
@@ -143,28 +135,28 @@
             border-radius: 14px;
             height: 25px;
             font-size: 20px;
-            text-align: left;
+            text-align: center;
         }
 
         #second {
             border-radius: 14px;
             height: 25px;
             font-size: 20px;
-            text-align: left;
+            text-align: center;
         }
 
         #third {
             border-radius: 14px;
             height: 25px;
             font-size: 20px;
-            text-align: left;
+            text-align: center;
         }
 
         #fourth {
             border-radius: 14px;
             height: 25px;
             font-size: 20px;
-            text-align: left;
+            text-align: center;
         }
     </style>
 </body>
