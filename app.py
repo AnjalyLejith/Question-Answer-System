@@ -44,9 +44,12 @@ def success():
 def refresh():
     return render_template('index.html')
 
+
+
 @app.route('/back', methods = ['POST'])
 def back():
-    return render_template('index.html')
+    return redirect("/")
+
 
 @app.route('/display/<filename>')
 def display_image(filename):
